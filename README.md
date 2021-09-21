@@ -9,11 +9,18 @@ Es realmente sencillo tenemos 2 url:
   esta es un metodo POST, donde enviamos el ADN en un array de string asi:
     https://gnz7ynzdvh.execute-api.us-east-1.amazonaws.com/dev/mutant
     
-    en el body ponemos
+    en el body ponemos poner asi:
+    
+    
     {
-        "test": {
-            "dna": ["ATGCGA", "CAGTGC", "TTATGT", "AGAAGG", "CCCCTA","TCACTG"]
-        }
+     "dna": ["AAACGA", "CAGTGC", "TTATGT", "AGAAGG", "CCCCTA","TCACTG"]
     }
   
-La Segunda
+ La Segunda es para consultar las estadisticas de la aplicacion que indica la prevalencia de humanos mutantes.
+ solo es una peticion GET a la siguiente url 
+ https://gnz7ynzdvh.execute-api.us-east-1.amazonaws.com/dev/stats
+ 
+ 
+ 
+ 
+
